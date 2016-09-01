@@ -3,8 +3,6 @@ syntax on
 nnoremap <Space> <Nop>
 let mapleader="\<Space>"
 nmap <Leader><Leader> V
-:map <Space> <Leader>
-:map <Space><Space> <Leader><Leader>
 
 vmap v <plug>(expand_region_expand)
 vmap <c-v> <plug>(expand_region_shrink)
