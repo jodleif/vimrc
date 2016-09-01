@@ -3,7 +3,8 @@ syntax on
 nnoremap <Space> <Nop>
 let mapleader="\<Space>"
 nmap <Leader><Leader> V
-
+:map <MiddleMouse> <Nop>
+:imap <MiddleMouse> <Nop>
 vmap v <plug>(expand_region_expand)
 vmap <c-v> <plug>(expand_region_shrink)
 set nocompatible
@@ -24,7 +25,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'tpope/vim-fireplace'
 Plugin 'paredit.vim'
-Plugin 'venantius/vim-eastwood'
+"Plugin 'venantius/vim-eastwood'
 
 call vundle#end()
 filetype plugin indent on
