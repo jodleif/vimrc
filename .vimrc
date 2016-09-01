@@ -1,12 +1,5 @@
 set nu
 syntax on
-nnoremap <Space> <Nop>
-let mapleader="\<Space>"
-nmap <Leader><Leader> V
-:map <MiddleMouse> <Nop>
-:imap <MiddleMouse> <Nop>
-vmap v <plug>(expand_region_expand)
-vmap <c-v> <plug>(expand_region_shrink)
 set nocompatible
 filetype off
 
@@ -48,4 +41,12 @@ let g:syntastic_cpp_compiler_options = '-std=c++14'
 let g:ycm_show_diagnostic_ui = 0
 let g:clang_format#style_options = {
 			\ "Standard" : "C++11"}
+
+"keymappings
 nmap <Leader>C :ClangFormatAutoToggle<CR>
+set mouse=a
+nnoremap <Space> <Nop>
+let mapleader="\<Space>"
+nmap <Leader><Leader> V
+vmap v <plug>(expand_region_expand)
+vmap <c-v> <plug>(expand_region_shrink)
